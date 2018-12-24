@@ -7,5 +7,4 @@ import lombok.Setter;
 @Setter
 public class ExampleRequest {
     private String message;
-    private String sender;
 }

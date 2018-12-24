@@ -17,7 +17,7 @@ public class SimpleProducer {
 
     @PostMapping("/direct")
     public ResponseEntity publicMessageToKafka(@RequestBody ExampleRequest request){
-        this.sendMessage(request.getSender() + request.getMessage());
+        this.sendMessage(request.getMessage());
         return ResponseEntity.ok("Message sent to kafka");
     }
 
